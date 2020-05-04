@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="cascade/chatboard.css">
+{{#if admins}}
+    <script src="Script/aChat.js"></script>
+    {{>adminNav}}
+    <div id="list"></div>
+{{else}}
+    <script src="Script/chatboard.js"></script>
+    {{>navigation}}
+    <div id="list"><ul id="messageList"></ul></div>
+{{/if}}
+<div class="footer" id="inputArea">
+    <input class="input100" id="input" type="text" placeholder="Type your message here...." name="uname" {{pro}}>
+    <button id="send" type="submit" name="buttonVar" value="register">Send</button>
+</div>

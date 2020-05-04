@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="cascade/chatboard.css">
+<link rel="stylesheet" href="cascade/switch.css">
+<script src="Script/settings.js"></script>
+{{#if admins}}
+    {{>adminNav}}
+{{else}}
+    {{>navigation}}
+{{/if}}
+<br><h3 style="color: #2aff20">Post order from newest to oldest: </h3>
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" {{bool}}>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+<br><br><br>
+<button style="font-size: 24px" id="change">CHANGE BACKGROUND</button>

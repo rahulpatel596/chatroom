@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="cascade/chatboard.css">
+<script src="Script/mychats.js"></script>
+{{#if admins}}
+    {{>adminNav}}
+{{else}}
+    {{>navigation}}
+{{/if}}
+<div id="list"><table id="messageList"></table></div>

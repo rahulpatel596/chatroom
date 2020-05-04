@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="cascade/util.css">
+<link rel="stylesheet" type="text/css" href="cascade/main.css">
+
+<body style="background-color: #666666;">
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <form class="login100-form validate-form" action="/processReg?form=register" method="POST">
+                <span class="login100-form-title p-b-43"> Login to continue </span>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" placeholder="UserName" name="email">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <input class="input100" type="password" placeholder="Password" name="pword">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <input class="input100" type="password" placeholder="Password" name="pword2">
+                    <span class="focus-input100"></span>
+                </div>
+                <select name="Type">
+                    <option value="Admin" name="Admin">Administrator</option>
+                    <option value="Regular" name="Regular">Regular</option>
+                </select>
+                <br><br>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="submit" name="buttonVar" value="register">Register</button>
+                </div>
+            </form>
+            <div class="login100-more" style="background-image: url('images/bg-01.jpg');">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
